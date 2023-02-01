@@ -1,0 +1,24 @@
+{
+  "registries": [
+    {
+      "id": "G5eQfs2m",
+      "keyword": "registryA",
+      "axrId": "G5eQfs2m"
+    },
+    {
+      "keyword": "cars",
+      "axrId": "RbRtAMqg",
+      "id": "UfHsDKS"
+    },
+    {
+      "keyword": "ireland",
+      "axrId": "af685Inz",
+      "id": "21mIy08"
+    },
+    {
+      "keyword": "challenge",
+      "axrId": "rSZVDEnO",
+      "id": "CegJD8c"
+    }
+  ]
+}
