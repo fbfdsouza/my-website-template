@@ -1,29 +1,23 @@
 {
-  "name": "crawling-app-challenge",
+  "name": "react-app-template",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^1.2.3",
     "concurrently": "^7.6.0",
     "history": "^5.3.0",
-    "json-server": "^0.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.7.0",
     "styled-components": "^5.3.6"
   },
   "scripts": {
-    "start": "concurrently \"yarn run dev:server\" \"yarn run json-server\"",
-    "dev:server": "webpack-dev-server --watch --config config/webpack.dev --mode=development --open",
-    "prod:server": "node server.js --config build/webpack.prod --mode=production",
-    "prod:build": "webpack --config ./config/webpack.prod --mode=production",
-    "dev": "webpack --watch --config ./config/webpack.dev --mode=development",
-    "prod": "webpack --config ./config/webpack.prod --mode=production",
-    "build": "yarn run prod:build",
+    "start": "yarn run dev",
+    "dev": "webpack-dev-server --config config/webpack.dev --mode=development --open",
+    "build": "webpack --config ./config/webpack.prod --mode=production",
     "lint": "eslint --cache --ext .js --ext .jsx",
     "lint:fix": "eslint --ext .js --ext .jsx --fix",
-    "test": "jest",
-    "json-server": "json-server --watch db.json --port 3001"
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": [
@@ -71,11 +65,9 @@
     "jest-environment-jsdom": "^29.3.1",
     "prettier": "^2.0.5",
     "style-loader": "^2.0.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^5.0.0-rc.3",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-middleware": "^3.7.2",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.1.2"
+    "webpack": "^5.75.0",
+    "webpack-cli": "5.0.1",
+    "webpack-dev-server": "4.11.1",
+    "webpack-merge": "5.8.0"
   }
 }

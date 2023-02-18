@@ -1,13 +1,7 @@
 const path = require("path");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const { merge } = require('webpack-merge')
-const dev = require('./webpack.dev')
+const common = require('./webpack.common')
 
-module.exports = merge(dev, {
-    plugins: [
-        new UglifyJsPlugin({ test: /\.js(\?.*)?$/i }),
-    ],
-    module: {
-        rules: [],
-    },
+module.exports = merge(common, {
+    mode: 'production',
 });
