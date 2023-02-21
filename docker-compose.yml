@@ -25,8 +25,10 @@ services:
     volumes:
       - app:/var/lib/app/rest_api
     environment:
-    - PORT=8000
-    - MONGO_DB_URI=mongodb://mongodb:27017/db_container
+      - PORT=8000
+      - MONGO_DB_URI=mongodb://mongodb:27017/db_container
+    depends_on:
+      - mongodb
 volumes:
   database:
   app:
