@@ -1,13 +1,6 @@
-import React, { useEffect } from "react"
-import { restServer1 } from "../../api/baseAPI"
+import React from "react"
 
 const Home = () => {
-
-
-    useEffect(async ()=>{
-        console.log(await restServer1.get("/"))
-    },[])
-
     return <h1>Home</h1>
 }
 
